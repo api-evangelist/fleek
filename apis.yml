@@ -1,8 +1,25 @@
 aid: fleek
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/fleek.png
 name: Fleek
-description: 'Fleek is a company surfaced as a portfolio company of hv-capital and added to the API Evangelist
-  network as a stub for enrichment. Sector: marketplace. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Fleek is a B2B wholesale marketplace for vintage and secondhand clothing that connects
+  resellers with a global network of verified suppliers, letting new resellers, full-time resellers,
+  and retail businesses source pre-owned inventory in bulk at wholesale margins. The platform aggregates
+  more than a thousand secondhand suppliers worldwide, handles discovery, ordering, and logistics through
+  its website and mobile apps, and is backed by HV Capital. Fleek operates a consumer/reseller storefront
+  (built on Shopify) and a separate vendor onboarding flow for suppliers; it does not currently publish
+  a public developer API, SDKs, or API documentation. This profile was surfaced from the HV Capital
+  portfolio and enriched from Fleek''s public web surface.'
 url: https://raw.githubusercontent.com/api-evangelist/fleek/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +29,39 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Marketplace
+- Wholesale
+- Vintage Clothing
+- Secondhand
+- Resale
+- E-Commerce
+- Fashion
 apis: []
+common:
+- type: DomainSecurity
+  url: security/fleek-domain-security.yml
+- type: Website
+  url: https://joinfleek.com
+- type: Blog
+  url: https://joinfleek.com/blog
+- type: Support
+  url: https://support.joinfleek.com/hc/en-us
+- type: TermsOfService
+  url: https://joinfleek.myshopify.com/pages/terms
+- type: PrivacyPolicy
+  url: https://joinfleek.myshopify.com/pages/privacy
+- type: SignUp
+  url: https://fleek-vendor.app.link/3JiH7nUYWIb
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
